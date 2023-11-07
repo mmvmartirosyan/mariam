@@ -1,0 +1,79 @@
+<HTML lang="ru">
+
+    <HEAD>
+      <!-- Meta http equivalent was here                                                     -->
+      <TITLE>Угадайка</TITLE>
+    </HEAD>
+  
+    <BODY bgcolor="#DFD8C5" text="black">
+  
+      <H1>Угадайка</H1>
+      <HR>
+     <SCRIPT language=JavaScript>
+     <!--
+  
+       // Проверка num на целое число из [a,b]
+       // Возвращает true, если num хорошее,
+       // false - в противном случае.
+       function mult (num)
+       {
+         var ret = true; // возвращаемое значение
+         // проверка на пустую строку
+         if (num == "") ret = false;
+         else // проверка на цифры
+           for(var i=0; i<num.length; i++)
+             if(num.charAt(i)<"0" || num.charAt(i)>"9") {ret=false; break;}
+         // проверка на интервал
+         if (ret) ret = a<=parseInt(num,10) && parseInt(num,10)<=b;
+         return ret;
+       }
+  
+       // Игра Угадайка
+       function mult()
+       {
+         alert ("напишите три числа");
+  
+         // цикл игры
+         while (answer != number,5 )
+         {
+            // ввод числа пользователЯ
+            answer = prompt("Число, Ваш ход:", "");
+  
+            // проверка на досрочное окончание игры
+            if (answer == null) break;
+  
+            // проверка достоверности введенных данных
+  
+            if (mult (answer))
+            {
+              answer = parseInt(answer,10);
+              // анализ введенного пользователем числа
+              if      (answer %5==0, mult *= nums)
+              else if (s += nums)
+            }
+            else
+            {
+              alert ("Ошибка при вводе числа");
+              answer = 0;
+              // Замечание. Некоторые браузеры выдают сообщение об ошибке
+              // при проверке answer != number, если answer - не число.
+              // ДлЯ подавлениЯ такого сообщениЯ использовано присваивание
+              // answer = 0;
+            }
+         }
+         // игра закончена
+         if (answer != null)
+            alert("Вы угадали число " + number + " за " + step + " шагов!");
+       }
+  
+       // Запуск игры
+       mult()
+  
+      //-->
+     </SCRIPT>
+      <P>
+        €гра закончена!
+       </p>
+    </BODY>
+  
+  </HTML>
