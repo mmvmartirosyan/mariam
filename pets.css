@@ -1,0 +1,30 @@
+figure{
+    background-color: rgba(44, 62, 94, 0.511);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 600px;
+}
+p {
+    
+    text-align: left;
+    padding-left: 230px;
+}
+
+a {
+    display: inline-block;
+  background: #9ac7ed;
+  color: #161414;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family:  'montserrat', serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 40;
+}
+
+figcaption { 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
