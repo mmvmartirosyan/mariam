@@ -1,0 +1,470 @@
+
+.head{
+    font-family: 'cartier';
+    font-style:italic;
+    font-size: 110px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.coll{
+  font-family: 'frankinity';
+  text-align: center;
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+.container {
+    padding: 2rem;
+    margin-left: 25px;
+    margin-top: -20px;
+    float: left;
+
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+.slider {
+    display: flex;
+    aspect-ratio: 1/1;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1rem;
+}
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit:cover;
+    aspect-ratio: 1/1;
+}
+.slider-nav {
+    display: flex;
+    column gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color:white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a: hover{
+    opacity:1; 
+    cursor: pointer;
+    background: #76c8ff;
+	border-color: #777 !important; /*выполнение в любом случае*/
+}
+.slider-controls{
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.button{
+    padding: 1px 10px;
+    margin: 0 5px;
+    width: 10px
+
+}
+
+.info {
+    margin-left: 500px;
+    margin-top: 180px;
+    text-align: justify;
+    padding: 2%;
+    font-family: 'Mont' ;
+}
+
+.pic2{
+    margin-left: 600px;
+    margin-top: 100px;
+    font-family: 'Mont';
+    text-align: center;
+    font-size: 13px;
+}
+
+.info1{
+  margin-left: 10px;
+  margin-right: 800px;
+  margin-top: -450px;
+  text-align: justify;
+  padding: 2%;
+  font-family: 'Mont' ;
+}
+
+.info2{
+  margin-left: 10px;
+  margin-top: 50px;
+  text-align: justify;
+  padding: 2%;
+  font-family: 'mont' ;
+}
+
+.info3{
+  margin-left: 10px;
+  margin-top: 0px;
+  text-align: justify;
+  padding: 2%;
+  font-family: 'mont' ;
+}
+
+.pic3{
+  margin-left: 35px;
+  margin-top: 0px;
+  width: 490px;
+  font-family: 'Mont';
+  text-align: center;
+  font-size: 13px;
+}
+
+.info4{
+  margin-left: 600px;
+  margin-top: -420px;
+  text-align: justify;
+  padding: 2%;
+  font-family: 'mont' ;
+}
+
+.info5{
+  margin-left: 10px;
+  margin-top: 30px;
+  text-align: justify;
+  padding: 2%;
+  font-family: 'mont' ;
+}
+
+
+ /* ---------------Стили для контейнера загадки--------------- */
+ .riddle-container {
+    width: 250px;
+    margin-top: 150px;
+    margin-left: 600px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+ /* ---------------Стили для игры--------------- */
+ .igra {
+  width: 400px;
+  margin-top: -50px;
+  margin-left: 60px;
+  padding: 30px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+
+
+/*--------------------форма1------------------------------------*/
+/* Стили для .forma */
+.forma {
+    margin-left: 40px;
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    outline: 8px ridge rgb(213, 133, 133);
+    border-radius: 2rem;
+    aspect-ratio: 3/4;
+    width: 600px;
+    align: center;
+    
+  }
+  
+  /* Стили для h3 */
+  .forma h3 {
+    text-align: center;
+  }
+  
+  /* Стили для form */
+  .forma form {
+    margin-top: 10px;
+  }
+  
+  /* Стили для p */
+  .forma p {
+    margin-bottom: 10px;
+  }
+  
+  /* Стили для input[type="text"], input[type="number"], input[type="password"], textarea, select */
+  .forma input[type="text"],
+  .forma input[type="number"],
+  .forma input[type="password"],
+  .forma textarea,
+  .forma select {
+    width: 100%;
+    padding: 4px;
+    border-radius:10px;
+  }
+  
+  /* Стили для input[type="radio"], input[type="checkbox"] */
+  .forma input[type="radio"],
+  .forma input[type="checkbox"] {
+    /*margin-right-для определения прстранства межбду точкой и текстом*/
+    margin-right: 4px;
+  }
+  
+  /* Стили для textarea */
+  .forma textarea {
+    width: 100%;
+    /*resize-когда можно изменять форму ячейки файла, в данном случае менять ее нельзя*/
+    resize: none;
+  }
+  
+  /* Стили для .buttonf */
+  .forma .buttonf {
+    text-align: center;
+  }
+  
+  /* Стили для button, burron[type="reset"], input[type="submit"] */
+  .forma button,
+  .forma button[type="reset"],
+  .forma input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #6fc8e6;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Стили для button:hover, burron[type="reset"]:hover, input[type="submit"]:hover */
+  .forma button:hover,
+  .forma button[type="reset"]:hover,
+  .forma input[type="submit"]:hover {
+    background-color: #005b80;
+  }
+
+
+  /*---------------------------------navigation-----------------------------------*/
+  img{
+    margin: 1rem;
+  }
+
+  .flex{
+    display: flex;
+    gap: var(--gap, 2rem);
+  }
+
+  .primary-header {
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .primary-navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .primary-navigation a {
+    text-decoration: none;
+  }
+
+  .primary-navigation a> [aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: 0.65em;
+    font-family: 'Masvol', sans-serif;
+  }
+.kvadrat{
+    height: 350px;
+    width: 250px;
+    border-radius: 1rem;
+    background:#ccc;
+    border-color:#000000;
+    margin-left: 90px;
+    margin-top: -20px;
+  }
+
+.photka{
+  border-radius: 1rem;
+  margin-left: 120px;
+  margin-top: -320px;
+  aspect-ratio: 3/4;
+  max-width: 270px;
+  box-shadow: 0 1.5rem 5rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.krug1 {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 60px;
+  margin-top:-320px;
+  margin-left: 450px;
+}
+
+.krug2 {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 60px;
+  margin-top:30px;
+  margin-left: 450px;
+}
+.krug3 {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 60px;
+  margin-top:30px;
+  margin-left: 450px;
+}
+
+.krug4 {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 60px;
+  margin-top:30px;
+  margin-left: 450px;
+}
+
+
+.palka1{
+  margin-top: -160px;
+  margin-left: 475px;
+}
+
+.palka2{
+  margin-top: 47px;
+  margin-left:475px;
+}
+
+.palka3{
+  margin-top: 48px;
+  margin-left:475px;
+}
+
+.palka4{
+  margin-top: 48px;
+  margin-left:475px;
+}
+
+.aboutme1{
+  font-family: 'Mont';
+  font-size: 25px;
+  margin-top: -175px;
+  margin-left: 600px;
+}
+
+.aboutme2{
+  font-family: 'Mont';
+  font-size: 25px;
+  margin-left: 600px;
+  margin-top: -7px;
+}
+
+.aboutme3{
+  font-family: 'Mont';
+  font-size: 25px;
+  margin-left: 600px;
+  margin-top: -7px;
+}
+
+.aboutme4{
+  font-family: 'Mont';
+  font-size: 25px;
+  margin-left: 600px;
+  margin-top: -7px;
+}
+
+.ind{
+  font-family: 'frankinity';
+  margin-top: -250px;
+  font-size: 40px;
+  margin-left: 60px;
+}
+
+.formainfo{
+  font-family: 'Mont';
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.forma1 {
+  margin-left: 720px;
+  margin-top: -1000px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  outline: 8px ridge rgb(202, 131, 131);
+  border-radius: 2rem;
+  aspect-ratio: 3/4;
+  width: 600px;
+}
+
+/* Стили для h3 */
+.forma1 h3 {
+  text-align: center;
+}
+
+/* Стили для form */
+.forma1 form {
+  margin-top: 10px;
+}
+
+/* Стили для p */
+.forma1 p {
+  margin-bottom: 10px;
+}
+
+/* Стили для input[type="text"], input[type="number"], input[type="password"], textarea, select */
+.forma1 input[type="text"],
+.forma1 input[type="number"],
+.forma1 input[type="password"],
+.forma1 textarea,
+.forma1 select {
+  width: 100%;
+  padding: 4px;
+  border-radius:10px;
+}
+
+/* Стили для input[type="radio"], input[type="checkbox"] */
+.forma1 input[type="radio"],
+.forma1 input[type="checkbox"] {
+  /*margin-right-для определения прстранства межбду точкой и текстом*/
+  margin-right: 4px;
+}
+
+/* Стили для textarea */
+.forma1 textarea {
+  width: 100%;
+  /*resize-когда можно изменять форму ячейки файла, в данном случае менять ее нельзя*/
+  resize: none;
+}
+
+/* Стили для .buttonf */
+.forma1 .buttonf {
+  text-align: center;
+}
+
+/* Стили для button, burron[type="reset"], input[type="submit"] */
+.forma1 button,
+.forma1 button[type="reset"],
+.forma1 input[type="submit"] {
+  padding: 5px 10px;
+  background-color: #e66f6f;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стили для button:hover, burron[type="reset"]:hover, input[type="submit"]:hover */
+.forma1 button:hover,
+.forma1 button[type="reset"]:hover,
+.forma1 input[type="submit"]:hover {
+  background-color: #5e1d1d;
+}

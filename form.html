@@ -1,0 +1,166 @@
+<!DOCTYPE html >
+<html>
+ <head> 
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Mariam Martirosyan BLG221">
+    <meta name="description" content="контрольная работа">
+    <meta name="keywords" content="собственный сайт">
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.cdnfonts.com/css/masvol" rel="stylesheet"> 
+    <title>Cartier </title>
+ </head>  
+ <body>
+
+    <!DOCTYPE html >
+    <html>
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Mariam Martirosyan BLG221">
+        <meta name="description" content="контрольная работа">
+        <meta name="keywords" content="собственный сайт">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Cartier </title>
+     </head>  
+     <body> 
+    
+    <header class="primary-header flex">
+        <div>
+            <img src="https://cdn.worldvectorlogo.com/logos/cartier-1.svg" width="35">
+        </div>
+    
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="web.html"><span aria-hidden="true">00</span>Главная</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="coll.html"><span aria-hidden="true">01</span>Коллекции</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="me.html"><span aria-hidden="true">02</span>Контактная информация</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="igra.html"><span aria-hidden="true">03</span>Игры</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="form.html"><b><span aria-hidden="true">04</span>Обратная связь</b></a>
+        </ul>
+        </nav>
+    </header>
+
+    <p> <h2 class="coll"> Обратная связь </h2></p>
+    <p class="formainfo"> <font>Ваша обратная связь поможет нам улучшить работу сайта и магазинов! <br> Вторая форма предоставлена для заполнения жалоб и обращения в случае попадания в неприятную ситуацию.</font></p>
+
+<section class="forma" >
+    <h3>Форма</h3>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p>Для поисковика:<input name="q" type="Text" value="search"></p>
+            <p>Адрес электронной почты: <input name="email" size=20 type="Text" id="email"></p>
+            <p>Фамилия: <input name="last_name" size=20 type="Text" id="surname"></p>
+            <p>Имя: <input name="fname" size=20 type="Text" id="fname"></p>
+            <p>Возраст: <input name="age" size=20 type="Number" value="0" id="age"></p>
+            <p>Место проживания:
+                <input name="place" type="Radio" value="Moscow">Москва
+                <input checked name="place" type="Radio" value="St Petersburg"> Санкт-Петербург
+                <input checked name="place" type="Radio" value="Khabarovsk"> Хабаровск
+                <input checked name="place" type="Radio" value="Sochi"> Сочи
+                <input checked name="place" type="radio" value="other"> Другое 
+            </p>
+            <p>Какие категории товаров вы приобретали у нас ранее
+                <input checked name="language" type="Checkbox" value="russian">Ювелирные украшения
+                <input checked name="language" type="Checkbox" value="english">Часы
+                <input checked name="language" type="Checkbox" value="spanish">Сумки
+            </p>
+
+            <p>Как часто покупали ювелирные украшения от Cartier
+                <select name="languages">
+                    <OPTION value="Владею свободно">1-2 раза</OPTION>
+                    <OPTION value="Читаю и перевожу со словарем">3-5 раз</OPTION>
+                    <OPTION value="Не владею">Больше 5 раз</OPTION>
+                </select>
+            </p>
+            <p>Как часто покупали часы от Cartier
+                <select name="languages">
+                    <OPTION value="Владею свободно">1-2 раза</OPTION>
+                    <OPTION value="Читаю и перевожу со словарем">3-5 раз </OPTION>
+                    <OPTION value="Не владею">Больше 5 раз</OPTION>
+                </select>
+            </p>
+            <p>Как часто покупали сумки от Cartier
+                <select name="languages">
+                    <OPTION value="Владею свободно">1-2 раза</OPTION>
+                    <OPTION value="Читаю и перевожу со словарем">3-5 раз</OPTION>
+                    <OPTION value="Не владею">Больше 5 раз</OPTION>
+                </select>
+            </p>
+        
+        <p> Дополнительная информация (замечания по работе или другие комментарии):
+            <br>
+            <TEXTAREA cols=60 name="textarea" rows=4>Для заметок</TEXTAREA>
+        </p>
+        <p>Дата: <input name="user_date" type="date" value='2000-01-01'></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+
+        <p>Название файла: <input name="000_file_name" size='30' type="Техт" value="Н_ОW_Г_326510_1_Ivanov.txt"></p>
+
+       
+            <p><input type="file" name="f">
+            <input type="submit" value="Отправить"></p>
+        
+
+        <input name="function" type="hidden" value="page">
+        <!--Элементы <input> скрытого типа позволяют веб-разработчикам включать 
+            данные, которые пользователи не могут видеть или изменять при отправке формы. -->
+        <input name="page_id" type="hidden" value="3">
+
+        <p class="buttonf">
+            <!--reset-обновить; кнопка обновления-->
+            <button type="Reset" type="Reset" value="Обновить">Начать заново </button>
+            <button type="submit">Отправить</button>
+        </p>
+            <input type="checkbox" name="tochka" name="itg" onclick="check(this.form)"> Summary
+            <p id="resultat"></p>
+    </form>
+</section>
+
+
+<section class="forma1" >
+    <h3>Жалоба</h3>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <p>Для поисковика:<input name="q" type="Text" value="search"></p>
+            <p>Адрес электронной почты: <input name="email" size=20 type="Text" id="email"></p>
+            <p>Фамилия: <input name="last_name" size=20 type="Text" id="surname"></p>
+            <p>Имя: <input name="fname" size=20 type="Text" id="fname"></p>
+            <p>Возраст: <input name="age" size=20 type="Number" value="0" id="age"></p>
+            <p>Место проживания:
+                <input name="place" type="Radio" value="Moscow">Москва
+                <input checked name="place" type="Radio" value="St Petersburg"> Санкт-Петербург
+                <input checked name="place" type="Radio" value="Khabarovsk"> Хабаровск
+                <input checked name="place" type="Radio" value="Sochi"> Сочи
+                <input checked name="place" type="radio" value="other"> Другое 
+            </p>
+            <p>Какие категории товаров вы приобретали у нас ранее
+                <input checked name="language" type="Checkbox" value="russian">Ювелирные украшения
+                <input checked name="language" type="Checkbox" value="english">Часы
+                <input checked name="language" type="Checkbox" value="spanish">Сумки
+            </p>
+        
+        <p> Опишите свою жалобу:
+            <br>
+            <TEXTAREA cols=60 name="textarea" rows=4>Для заметок</TEXTAREA>
+        </p>
+        <p>Дата: <input name="user_date" type="date" value='2000-01-01'></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+
+        <p>Название файла: (при наличии фотографий или видео) <input name="000_file_name" size='30' type="Техт" value="Н_ОW_Г_326510_1_Ivanov.txt"></p>
+            <p><input type="file" name="f">
+            <input type="submit" value="Отправить"></p>
+        <input name="function" type="hidden" value="page">
+        <!--Элементы <input> скрытого типа позволяют веб-разработчикам включать 
+            данные, которые пользователи не могут видеть или изменять при отправке формы. -->
+        <input name="page_id" type="hidden" value="3">
+
+        <p class="buttonf">
+            <!--reset-обновить; кнопка обновления-->
+            <button type="Reset" type="Reset" value="Обновить">Начать заново </button>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+</section>
+
+
+
+ </body>
+ <script src="web.js"></script>
+</html>

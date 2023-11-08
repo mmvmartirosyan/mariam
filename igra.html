@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 1</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.cdnfonts.com/css/masvol" rel="stylesheet"> 
+</head>
+<body>
+
+    <!DOCTYPE html >
+    <html>
+     <head> 
+        <meta charset="UTF-8"> 
+        <meta name="author" content="Mariam Martirosyan BLG221">
+        <meta name="description" content="контрольная работа">
+        <meta name="keywords" content="собственный сайт">
+        <link rel="stylesheet" href="style.css"/>
+        <title>Cartier </title>
+     </head>  
+     <body> 
+    
+    <header class="primary-header flex">
+        <div>
+            <img src="https://cdn.worldvectorlogo.com/logos/cartier-1.svg" width="35">
+        </div>
+    
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+            <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="web.html"><span aria-hidden="true">00</span>Главная</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="coll.html"><span aria-hidden="true">01</span>Коллекции</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="me.html"><span aria-hidden="true">02</span>Контактная информация</a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="igra.html"><b><span aria-hidden="true">03</span>Игры</b></a>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2 " href="form.html"><span aria-hidden="true">04</span>Обратная связь</a>
+        </ul>
+        </nav>
+    </header>
+    <p> <h2 class="coll">Игры</h2></p>
+<div class="riddle-container">
+    <h3>Загадки</h3>
+    <p id="riddle"></p>
+    <!--placeholder-место, куда вводят ответ-->
+    <input type="text" id="answer-input" placeholder="Введите ваш ответ">
+    <button onclick="checkAnswer()">Проверить</button>
+    <p id="result"></p>
+    <button onclick="restartGame()">Начать заново</button>
+</div>
+
+<h2 class="ind">Индивидуальное задание</h2>
+
+<div class="igra"> 
+    <h1>Проверка возможности выпиливания квадратного бруса</h1>
+    <label for="diameter">Диаметр поперечного сечения бревна (D):</label>
+    <input type="number" id="diameter" min="0">
+    <br><br>
+    <label for="width">Ширина квадратного бруса (A):</label>
+    <input type="number" id="width" min="0">
+    <br><br>
+    <button onclick="checkPossibility()">Проверить возможность выпиливания</button>
+    <br><br>
+    <p id="resulti"></p>
+</div>
+
+</body>
+<script src="web.js"></script>
+</html>

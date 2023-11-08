@@ -4,7 +4,6 @@ function find_edit() {
     document.getElementsByTagName('div')[4].innerText="Mariam"
     document.getElementsByTagName('div')[5].innerText="Vaganovna"
     document.getElementsByTagName('div')[8].innerText="Khabarovsk"
-    document.getElementsByTagName('div')[0].innerText= "Ministry of Internal Affairs of Russia for the Khabarovsk Territory"
     document.getElementsByTagName('div')[6].innerText= "female"
     
 }
